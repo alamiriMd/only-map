@@ -17,12 +17,15 @@ html {
 	overflow: hidden;
 	font-size: 14px;
 }
+
 button {
 	cursor: pointer;
 }
+
 button:active {
 	transform: scale(1.01);
 }
+
 .block {
 	position: relative;
 	background-size: 100% 100%;
@@ -69,7 +72,8 @@ button:active {
 	height: 10px;
 }
 
-.dash {
+.horisontalLine,
+.verticalLine {
 	display: block;
 	position: absolute;
 	top: 4px;
@@ -78,39 +82,31 @@ button:active {
 	background: #fff;
 }
 
-.verticalLine,
-.horisontalLine {
-	display: block;
-	position: absolute;
+.verticalLine {
 	left: 4px;
+	top: 0;
 	width: 2px;
 	height: 10px;
-	background: #fff;
 }
 
-.horisontalLine {
-	top: 4px;
-	width: 10px;
-	height: 2px;
-}
 
 .verticalLine.hidden {
 	display: none;
 }
 
-.green {
+.greenColor {
 	background: rgba(106, 191, 75, 0.7);
 }
 
-.open.green {
+.open.greenColor {
 	background: #6abf4b;
 }
 
-.blue {
+.blueColor {
 	background: rgba(56, 119, 238, 0.7);
 }
 
-.open.blue {
+.open.blueColor {
 	background: #3877ee;
 }
 

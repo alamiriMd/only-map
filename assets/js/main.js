@@ -1,11 +1,10 @@
 import { coordinates } from "./data1.js";
 const block = document.querySelector(".block");
-const containerBtn = document.getElementById("_container");
-
+const mainBtn = document.getElementById("mainBtn");
 
 function firstLoadHandler() {
-	coordinates.forEach((data, index) => {
-		const buttonClone = containerBtn.cloneNode(true);
+	coordinates.forEach(function (data, index) {
+		const buttonClone = mainBtn.cloneNode(true);
 		buttonClone.classList.add(data.class);
 		buttonClone.querySelector(".btnText").textContent = data.text;
 		buttonClone.id = `btn_${index}`;

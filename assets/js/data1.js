@@ -1,47 +1,74 @@
 export const coordinates = [
 	{
-		class: "blue",
-		text: "ЖД станция",
-		coordinates: { "x": 30.208, "y": 26.111 }
+		class: "blueColor",
+		text: "text",
+		coordinates: {
+			x: 30.206,
+			y: 26.101,
+		},
 	},
 	{
-		class: "blue",
-		text: "Главный вход",
-		coordinates: { "x": 23.229, "y": 66.111 }
+		class: "blueColor",
+		text: "text",
+		coordinates: {
+			x: 23.227,
+			y: 66.121,
+		},
 	},
 	{
-		class: "blue",
-		text: "Тренажерный зал",
-		coordinates: { "x": 56.354, "y": 58.426 }
+		class: "blueColor",
+		text: "text",
+		coordinates: {
+			x: 56.352,
+			y: 58.432,
+		},
 	},
 	{
-		class: "blue",
-		text: "Жилые районы",
-		coordinates: { "x": 71.302, "y": 20.833 }
+		class: "blueColor",
+		text: "text",
+		coordinates: {
+			x: 71.31,
+			y: 20.829,
+		},
 	},
 	{
-		class: "blue",
-		text: "Культурный центр",
-		coordinates: { "x": 73.646, "y": 43.981 }
+		class: "blueColor",
+		text: "text",
+		coordinates: {
+			x: 73.65,
+			y: 43.979,
+		},
 	},
 	{
-		class: "blue",
-		text: "Комплекс 2",
-		coordinates: { "x": 82.812, "y": 66.018 }
+		class: "blueColor",
+		text: "text",
+		coordinates: {
+			x: 82.808,
+			y: 66.02,
+		},
 	},
 	{
-		class: "green",
-		text: "Медицинский центр",
-		coordinates: { "x": 59.896, "y": 37.407 }
+		class: "greenColor",
+		text: "text",
+		coordinates: {
+			x: 59.9,
+			y: 37.411,
+		},
 	},
 	{
-		class: "green",
-		text: "Комплекс 1",
-		coordinates: { "x": 67.708, "y": 61.806 }
+		class: "greenColor",
+		text: "text",
+		coordinates: {
+			x: 67.722,
+			y: 61.8,
+		},
 	},
 	{
-		class: "green",
-		text: "Жилые комплексы",
-		coordinates: { "x": 57.552, "y": 72.685 }
-	}
-]
+		class: "greenColor",
+		text: "text",
+		coordinates: {
+			x: 57.549,
+			y: 72.679,
+		},
+	},
+];
