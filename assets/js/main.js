@@ -1,5 +1,6 @@
 import { coordinates } from "./data1.js";
-const block = document.querySelector(".block");
+const body = document.body;
+const contentContainer = document.getElementById("contentContainer")
 const mainBtn = document.getElementById("mainBtn");
 
 function firstLoadHandler() {
@@ -10,16 +11,16 @@ function firstLoadHandler() {
 		buttonClone.id = `btn_${index}`;
 		buttonClone.style.left = data.coordinates.x + "%";
 		buttonClone.style.top = data.coordinates.y + "%";
-		block.appendChild(buttonClone);
+		contentContainer.appendChild(buttonClone);
 	});
 }
 
-block.addEventListener("click", (event) => {
-	const clickedButton = event.target.closest(".overlayBtn");
+body.addEventListener("click", function (event) {
+	const clickedButton = event.target.closest(".btn");
 	if (clickedButton) {
 		toggleButtonState(clickedButton);
 	} else {
-		const allButtons = block.querySelectorAll(".overlayBtn");
+		const allButtons = body.querySelectorAll(".btn");
 		allButtons.forEach((button) => {
 			button.classList.remove("open");
 			const verticalLine = button.querySelector(".verticalLine");

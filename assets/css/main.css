@@ -15,7 +15,7 @@ body,
 html {
 	height: 100%;
 	overflow: hidden;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 button {
@@ -26,7 +26,7 @@ button:active {
 	transform: scale(1.01);
 }
 
-.block {
+#contentContainer {
 	position: relative;
 	background-size: 100% 100%;
 	background-position: center;
@@ -34,7 +34,7 @@ button:active {
 	background-image: url("../img/adler.png");
 }
 
-.block::before {
+#contentContainer::before {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -43,7 +43,7 @@ button:active {
 	opacity: 0.4;
 }
 
-.overlayBtn {
+.btn {
 	position: absolute;
 	display: flex;
 	top: 44.629%;
@@ -58,7 +58,7 @@ button:active {
 	transition: background 0.4s;
 }
 
-.overlayBtn.open {
+.btn.open {
 	display: flex;
 	padding: 11px 15px;
 	align-items: center;
