@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: inherit;
+}
+
+body,
+html {
+	height: 100%;
+	overflow: hidden;
+	font-size: 14px;
+}
+button {
+	cursor: pointer;
+}
+button:active {
+	transform: scale(1.01);
+}
+.block {
+	position: relative;
+	background-size: 100% 100%;
+	background-position: center;
+	height: 100vh;
+	background-image: url("../img/adler.png");
+}
+
+.block::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #020f20;
+	opacity: 0.4;
+}
+
+.overlayBtn {
+	position: absolute;
+	display: flex;
+	top: 44.629%;
+	left: 35.885%;
+	min-width: 40px;
+	min-height: 40px;
+	padding: 15px;
+	align-items: center;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	transition: background 0.4s;
+}
+
+.overlayBtn.open {
+	display: flex;
+	padding: 11px 15px;
+	align-items: center;
+	gap: 15px;
+	border-radius: 40px;
+}
+
+.plusIcon {
+	position: relative;
+	width: 10px;
+	height: 10px;
+}
+
+.dash {
+	display: block;
+	position: absolute;
+	top: 4px;
+	width: 10px;
+	height: 2px;
+	background: #fff;
+}
+
+.verticalLine,
+.horisontalLine {
+	display: block;
+	position: absolute;
+	left: 4px;
+	width: 2px;
+	height: 10px;
+	background: #fff;
+}
+
+.horisontalLine {
+	top: 4px;
+	width: 10px;
+	height: 2px;
+}
+
+.verticalLine.hidden {
+	display: none;
+}
+
+.green {
+	background: rgba(106, 191, 75, 0.7);
+}
+
+.open.green {
+	background: #6abf4b;
+}
+
+.blue {
+	background: rgba(56, 119, 238, 0.7);
+}
+
+.open.blue {
+	background: #3877ee;
+}
+
+.btnText {
+	display: none;
+}
+
+.btnText.hidden {
+	display: block;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
