@@ -31,6 +31,8 @@ button:active {
 	background-size: 100% 100%;
 	background-position: center;
 	height: 100vh;
+	max-width: 1920px;
+	margin:auto;
 	background-image: url("../img/adler.png");
 }
 
