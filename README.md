@@ -1,3 +1,3 @@
-## Task 
+## Map
 
-- App deployed on [https://task-temp.vercel.app/](https://task-temp.vercel.app/)
+- App deployed on [https://map-only.vercel.app/](https://map-only.vercel.app/)
